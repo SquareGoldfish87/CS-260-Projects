@@ -1,0 +1,22 @@
+I'm including this to discuss further ways I could have improved the program, but didn't for
+various reasons.
+
+Firstly, I could have had a random bag of marbles, with a random length and random numbers.
+This could have been accomplished with a randomizer, though it may have ruined the "uniqueness"
+of the marbles, since there could be multiple 1s or 2s. Thus, I could further improve the list by
+removing all duplicate ints. However, since I'm writing about how it could work in here, and not 
+implementing it, clearly I didn't do this. Why? Because the assignment was to do this as simply as
+possible. Making a pre-ordained marble bag is way simpler than doing the above. By a country mile.
+
+
+And this is the part where I've decided to break off from the above notes to discuss a few things:
+Firstly, I'd like to apologize for the severe lateness of this assignment. "I'll have time Sunday"
+turned into "Wait, how exactly does C++ work again?", which turned into "Unforseen circumstances on
+Monday, so I'll do what I can Tuesday" which became "More unforseen circumstances on Tuesday
+(sickness and personal responsibility don't mix well, by the way)" which became "I guess I have to
+do it Wednesday" which became "Wednesday night works" which became "F*** it, I'm gonna do it in
+Python, because at least then if something else unexpected comes up, at least the assignment will only
+take me 30 minutes to do". So the above is the notes I made about the C++ code, and the included 
+README is also about that code. There are going to be 2 attached code files, one (not working) in
+C++, which is about as far as I got before life happened. The other (working) is in Python, which I'm
+doing right after writing this.
