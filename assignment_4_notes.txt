@@ -1,0 +1,79 @@
+I should probably get a few different things out of the way first, since I figure I'm turning this in.
+
+To start with, I should probably explain why I didn't turn in anything for assignment 3. Truthfully, I
+wasn't sure how to do that assignment without having it potentially be plagarism. While trying to find
+out how linked lists work, I stumbled upon this site,
+(https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+which has an example of a linked list. I couldn't think of any other way to make a linked list, but just
+rewriting that example with different variable names would have felt like cheating, so I didn't. 
+However, while I did try to make the code my own where possible, what I've done could be viewed as 
+doing exactly that. So, what changed? Well, 2 things.
+
+1: The entire point of assignment 3 was to make a linked list. Even if I made the other parts entirely 
+my work, I would have still copied the entire main point of the code. This assignment is more about
+interacting with that list, not the creation itself. So it doesn't feel as bad, though it still doesn't
+really sit right with me, hence the rambling document you're reading.
+
+2. I've been thinking this over for the better part of 2 weeks, and I've come to the conclusion that
+while I could potentially make my own wholly original linked list, I can't think of how exactly I would
+even go about that, and it's also the morning before this thing is due, and it's 3 AM. I don't really
+have a whole lot of options. So, here's what I've decided to do.
+
+I'm going to do the assignment, and while the code I end up using for the linked list is gonna look a 
+little too similar to the linked code for comfort, I hope that the rest of the code is original enough
+to make up for it. I'm also going to add an enqueue and dequeue, and ask that you possibly consider 
+this assignment to count for some form of credit towards assignment 3. 
+
+"Hang on, so you're asking for points for using the code you avoided using because you thought it 
+would lead to you getting no points?"
+
+Again, I hope that the original bits I add are enough to make it classify as my own work, and it
+definitely sounds stupid when you word it like that. But, in a nutshell, yeah.
+
+One quick final note: If the code I used does genuinely count as plagarism, let me know and I'll do 
+what I can to come up with a seperate solution and maybe turn in a revised version of this assignment.
+Plagarism is definitely not my intent, though I understand that this does probably toe the line.
+
+
+
+
+
+Forgot this was a notes document, didn't you? Below here is just random ideas and observations from
+when I was coding. Feel free to ignore or read, it's your call.
+
+The current plan is to have a function that does the calculation and assigns the answer to the list.
+Then we can "enqueue" as much as we need to for the sum, even if it's huge, and we can access the
+numbers later without removing them by running a get function. We could also dequeue the whole list
+and add the numbers together.
+Taking the value we need to remove/insert shouldn't be too bad
+
+We have the equation, and we have the list classes. How do we actually obtain the sum?
+We need to pull the values from the linked list, run them through the equation function, and then we
+can add the answer to that to a normal list. Then at the end, we just add the list elements.
+How do we make the list long enough then?
+We can't automate it, I don't know how and at this rate the assignment will be 2 days late as it is.
+However, we can almost certainly automate part of it.
+Here's the plan: We make the list however long (say, 5 links), and then if k != n+1 when we hit link
+5, we haven't gone far enough. So, we can just change the value stored in the final linked part,
+pull the new value like usual, run that through the equation function, and add it to the answer
+list. Then we keep doing that until we've done everything.
+
+Is what I would say, if I was stupid. We already need to add enqueue. All we need to do is 
+continually enqueue for each value of k. If we can do that, then we're fine. And entering a new
+value somewhere in the list is also gonna be kinda easy. It's just searching the list for where 
+we want to place the new value, and messing with pointers to "place" it there in the list.
+Removing is gonna be almost exactly the same, actually. And the "get" function is just 
+searching the list like we have, but just returning the value instead of messing with pointers. 
+None of this should be that hard.
+Dequeue is effectively what we're doing to get the values to get our answer anyhow, though we could
+also use "get". Either or, just make sure to include both.
+
+So, without idiocy this time, what's the plan?
+
+We should first make a linked list with every value of k we need (maybe have a function that
+enqueues and a function that adds). Then, we can pull the stored values of the list (3 functions,
+so that we can dequeue, remove, and get). We run those values through the equation function, add
+the results to a list, add the list, and print the result to the user.
+
+Funny how sometimes one little thing clicks and you suddenly understand everything and wonder 
+why this took 2+ weeks to do.
